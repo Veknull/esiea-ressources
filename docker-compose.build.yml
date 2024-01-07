@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  worker:
+    build:
+      context: ./worker
+    image: esiea-ressources/worker
+    
+  seed-data:
+    build:
+      context: ./seed-data
+    image: esiea-ressources/seed-data
+    
+  result:
+    build:
+      context: ./result
+    image: esiea-ressources/result
+    
+  vote:
+    build:
+      context: ./vote
+    image: esiea-ressources/vote
+
+
+  
